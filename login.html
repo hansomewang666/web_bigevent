@@ -22,7 +22,7 @@
       <!-- 登录的div -->
       <div class="login-box">
         <!-- 登录的表单 -->
-        <form class="layui-form" id="form_login" >
+        <form class="layui-form" id="form_login">
           <!-- 用户名 -->
           <div class="layui-form-item">
             <i
@@ -46,7 +46,7 @@
               style="font-size: 16px; color: #000"
             ></i>
             <input
-              type="text"
+              type="password"
               name="password"
               required
               lay-verify="required|pwd"
@@ -116,7 +116,7 @@
             ></i>
             <input
               type="password"
-              name="password"
+              name="repassword"
               required
               lay-verify="required|repwd"
               placeholder="再次确认密码"
@@ -141,14 +141,13 @@
           </div>
         </form>
       </div>
-      </div>
     </div>
     <!-- 导入 LayUi js  -->
-    <script src="/assets/lib/layui/layui.all.js"></script>
+    <script src="./assets/lib/layui/layui.all.js"></script>
     <!-- 导入 JQuery -->
-    <script src="/assets/lib/jquery.js"></script>
+    <script src="./assets/lib/jquery.js"></script>
     <!-- 导入 axios -->
-    <!-- <script src="./assets/lib/axios.js"></script> -->
+    <script src="./assets/lib/axios.js"></script>
     <!-- 导入默认url js -->
     <script src="./assets/js/baseAPI.js"></script>
     <!-- 导入自己的javaScript脚本 -->

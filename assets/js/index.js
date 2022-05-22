@@ -30,7 +30,7 @@ function getUserInfo() {
     },
     // 无论成功还是失败，最终都会调用complete回调函数
     complete: function (res) {
-      console.log(res.responseText)
+      // console.log(res.responseText)
       // 在complete回调函数中,可以使用res.responseJSON拿到服务器响应回来的数据
       if (
         res.responseJSON.status === 1 &&
@@ -53,7 +53,7 @@ function renderAvatar(user) {
   // 3. 按需渲染
   if (user.user_pic !== null) {
     // 3.1 渲染图片头像
-    $('.layui-nav-img').attr('src', user_pic).show()
+    $('.layui-nav-img').attr('src', user.user_pic).show()
     $('.text-avatar').hide()
   } else {
     // 3.2 渲染文本头像
